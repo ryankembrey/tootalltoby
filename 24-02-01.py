@@ -55,5 +55,5 @@ with BuildPart() as p:
     mirror(about=Plane.XY.offset(30), mode=Mode.INTERSECT)
 
 
-export_brep(p.part, "24-02-01.brep")
+export_step(p.part, "./models/24-02-01.step")
 print(f"Part mass = {p.part.volume*densa:0.2f}")

@@ -30,5 +30,5 @@ with BuildPart() as p:
         Circle(radius=4)
     extrude(amount=-25, mode=Mode.SUBTRACT)
 
-export_step(p.part, "24-01-04.step")
+export_step(p.part, "./models/24-01-04.step")
 print(f"Part mass = {p.part.volume*densa:0.2f}")

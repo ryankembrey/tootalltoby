@@ -50,5 +50,5 @@ with BuildPart() as p:
     extrude(amount=-2, mode=Mode.SUBTRACT)
 
 
-export_step(p.part, "24-01-05.step")
+export_step(p.part, "./models/24-01-05.step")
 print(f"Part mass = {p.part.volume*16387.064*0.002204623*densa:0.2f}")

@@ -47,5 +47,5 @@ with BuildPart() as p:
     extrude(amount=80, mode=Mode.INTERSECT)
 
 
-export_step(p.part, "24-04-02.step")
+export_step(p.part, "./models/24-04-02.step")
 print(f"Part mass = {p.part.volume*densa:0.2f}")
